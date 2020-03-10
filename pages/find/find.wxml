@@ -1,2 +1,7 @@
 <!--pages/find/find.wxml-->
-<text>pages/find/find.wxml</text>
+<view class="contanier">
+<!-- 搜索组件 -->
+  <z-search/>
+  <!-- 轮播图组件 -->
+  <z-swiper/>
+</view>

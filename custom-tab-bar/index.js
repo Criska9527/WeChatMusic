@@ -1,41 +1,67 @@
+// index.js
 Component({
   data: {
-    selected: 0,
-    color: "#7A7E83",
-    selectedColor: "#3683d6",
+    isShow_index: true,
+    isShow_playing: false,
+    isShow_me: false,
+    selected: 0, //首页
+    color: "#8D8D8D",
+    selectedColor: "#C62F2F",
     list: [{
-      pagePath: "/pages/mine/mine",
-      iconPath: "/image/mine.png",
-      selectedIconPath: "/image/mine.png",
-      text: "我的"
-    }, {
       pagePath: "/pages/find/find",
-      iconPath: "/image/find.png",
-      selectedIconPath: "/image/find.png",
-      text: "发现"
+      iconPath: "/images/music.png",
+      selectedIconPath: "/images/selected-music.png",
+      text: "乐库"
     }, {
       pagePath: "/pages/friend/friend",
-      iconPath: "/image/friend.png",
-      selectedIconPath: "/image/friend.png",
-      text: "朋友"
-    }, {
-      pagePath: "/pages/video/video",
-      iconPath: "/image/mv-line.png",
-      selectedIconPath: "/image/mv-line.png",
-      text: "视频"
-    },]
+      iconPath: "/images/selected-playing.png",
+      selectedIconPath: "/images/playing.png",
+      text: ""
+    },
+    {
+      pagePath: "/pages/mine/mine",
+      iconPath: "/images/me.png",
+      selectedIconPath: "/images/selected-me.png",
+      text: "我的"
+    }]
   },
-  attached() { },
+
   methods: {
-    switchTab(e) {
-      const data = e.currentTarget.dataset
-      const url = data.path
-      wx.switchTab({
-        url
-      })
+
+    switchTab_index: function () {
       this.setData({
-        selected: data.index
+        isShow_index: true,
+        isShow_me: false,
+        isShow_playing: false
       })
+      wx.switchTab({
+        url: '/pages/find/find'
+      })
+ 
+    },
+
+    switchTab_playing: function () {
+      this.setData({
+        isShow_playing: true,
+        isShow_index: false,
+        isShow_me: false
+      })
+      wx.switchTab({
+        url: '/pages/friend/friend'
+      })
+    
+    },
+
+    switchTab_me: function () {
+      this.setData({
+        isShow_me: true,
+        isShow_playing: false,
+        isShow_index: false
+      })
+      wx.switchTab({
+        url: '/pages/mine/mine'
+      })
+ 
     }
   }
 })

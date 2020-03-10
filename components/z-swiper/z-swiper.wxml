@@ -1,0 +1,13 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="5000" duration="500">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}">{{item}}</view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+</view>

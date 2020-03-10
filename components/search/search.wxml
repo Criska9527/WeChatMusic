@@ -1,0 +1,4 @@
+<!--components/search/search.wxml-->
+<view class="container">
+  <l-search-bar placeholder="搜索"/>
+</view>
