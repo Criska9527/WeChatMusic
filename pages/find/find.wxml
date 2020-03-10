@@ -4,4 +4,6 @@
   <z-search/>
   <!-- 轮播图组件 -->
   <z-swiper/>
+  <!-- listbar -->
+  <z-listbar/> 
 </view>

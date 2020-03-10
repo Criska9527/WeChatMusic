@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "z-search": "/components/search/search",
-    "z-swiper": "/components/z-swiper/z-swiper"
+    "z-swiper": "/components/z-swiper/z-swiper",
+    "z-listbar": "/components/z-listbar/z-listbar"
   }
 }

@@ -1,0 +1,74 @@
+/* components/z-listbar/z-listbar.wxss */
+
+.container {
+  margin-top: 10px;
+}
+
+.container .bar {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20rpx;
+}
+
+.imgdiv{
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center;     /* 垂直居中 */
+            /* height: 80px; */
+            /* border: 1px solid red; */
+}
+.container .bar .bar-item {
+  text-align: center;
+      
+
+  /* position: relative; *//* height: 70rpx;
+    width: 70rpx;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    background: red;
+    text-align: center; *//* display: table-cell;
+    vertical-align: middle; */
+}
+
+.container .bar .bar-item .bar-item-circle {
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+}
+
+.container .bar .bar-item text {
+  margin-top: 3rpx;
+}
+
+.iconclass {
+  font-size: 10rpx;
+  color: white;
+}
+
+.bar-image {
+  height: 40rpx;
+  width: 40rpx;
+  margin : auto;
+  
+}
+
+/* .tuijian{
+  top: 10px;
+  right: 9px;
+}
+.gedan{
+  top: 9px;
+  right: 10px;
+}
+.paihang{
+  top: 9px;
+  right: 10px;
+}
+.diantai{
+  top: 10px;
+  right: 10px;
+} */
