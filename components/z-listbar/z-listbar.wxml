@@ -1,10 +1,10 @@
 <!--components/z-listbar/z-listbar.wxml-->
 <view class="container">
   <view class="bar">
-    <view wx:for="{{list}}" wx:key="*this" class="bar-item">
-      <view class="imgdiv">
+    <view wx:for="{{list}}" wx:key="*this" class="bar-item" style="background-image: url('{{item.icon}}');">
+      <!-- <view class="imgdiv">
         <image class="bar-image {{item.classname}}" src="{{item.icon}}"></image>
-      </view>
+      </view> -->
 
       <view class="bar-item-circle"></view>
       <text> {{item.name}}</text>
