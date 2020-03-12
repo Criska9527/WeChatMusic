@@ -15,22 +15,22 @@ Component({
       {
         name:'每日推荐',
         icon:'/images/tuijian1.png',
-        classname:"tuijian"
+        classname:"icon-tuijian"
       },
       {
         name: '歌单',
         icon: '/images/gedan.png',
-        classname: "gedan"
+        classname: "icon-gedan"
       },
       {
         name: '排行榜',
         icon: '/images/paihang1.png',
-        classname: "paihang"
+        classname: "icon-paihang"
       },
       {
         name: '电台',
         icon: '/images/diantai.png',
-        classname: "diantai"
+        classname: "icon-yinle"
       }
     ]
   },

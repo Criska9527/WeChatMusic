@@ -5,5 +5,10 @@
   <!-- 轮播图组件 -->
   <z-swiper/>
   <!-- listbar -->
-  <z-listbar/> 
+  <z-listbar/>
+  <view class="musiclist">
+      <text class="title">推荐歌单</text>
+      <z-musiclist/>
+  </view> 
+
 </view>

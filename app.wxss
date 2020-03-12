@@ -1,3 +1,4 @@
+@import './fonts/stylesheet.wxss';
 /**app.wxss**/
 .container {
   height: 100%;
@@ -5,20 +6,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 200rpx 0;
+  padding: 500rpx 0;
   box-sizing: border-box;
 } 
-
-@font-face {
-  font-family: 'iconfont';  /* project id 1683606 */
-  src: url('//at.alicdn.com/t/font_1683606_i6pnfblh35.eot');
-  src: url('//at.alicdn.com/t/font_1683606_i6pnfblh35.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_1683606_i6pnfblh35.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_1683606_i6pnfblh35.woff') format('woff'),
-  url('//at.alicdn.com/t/font_1683606_i6pnfblh35.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_1683606_i6pnfblh35.svg#iconfont') format('svg');
-}
-
 .iconfont {
   font-family: "iconfont" !important;
   font-size: 16px;
@@ -114,5 +104,7 @@
 .icon-zuoyi:before {
   content: "\e735";
 }
+
+
 
 

@@ -6,7 +6,7 @@
         <image class="bar-image {{item.classname}}" src="{{item.icon}}"></image>
       </view> -->
 
-      <view class="bar-item-circle"></view>
+      <view class="bar-item-circle iconfont {{item.classname}}"></view>
       <text> {{item.name}}</text>
     </view>
   </view>

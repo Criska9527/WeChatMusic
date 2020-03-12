@@ -2,6 +2,7 @@
   "usingComponents": {
     "z-search": "/components/search/search",
     "z-swiper": "/components/z-swiper/z-swiper",
-    "z-listbar": "/components/z-listbar/z-listbar"
+    "z-listbar": "/components/z-listbar/z-listbar",
+    "z-musiclist": "/components/z-musiclist/z-musiclist"
   }
 }
