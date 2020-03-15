@@ -1,0 +1,4 @@
+<view class="container">
+   <z-navbar back home navigationBarTitle="{{navigationBarTitle}}"></z-navbar>
+   <z-music musicinfo="{{musicinfo}}"/>
+</view>

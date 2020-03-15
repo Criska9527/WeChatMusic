@@ -1,0 +1,5 @@
+<!--components/z-music/z-music.wxml-->
+<view class="contenet" style="background-image:url('{{musicinfo.imgurl}}')">
+   <text>{{musicinfo.artistsname}}</text>
+  
+</view>

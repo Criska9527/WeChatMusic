@@ -1,1 +1,19 @@
 /* pages/find/find.wxss */
+.musiclist{
+  padding: 30rpx;
+}
+.musiclist .title{
+  font-size: 28rpx;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+z-musiclist{
+
+}
+
+/*隐藏滚动条*/
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

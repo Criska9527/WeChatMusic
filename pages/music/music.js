@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    navigationBarTitle: "牵丝戏",
+    musicid: 30352891,
+    musicinfo: {
+      url: "http://m7.music.126.net/20200314184039/a96d6ecb68c9f50187b315f91478e8b1/ymusic/a8f8/4db5/48a4/f8a85686e7fc0d894b6d9f210500ff37.mp3",
+      imgurl:"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+      artistsname:"银临",
+      musicid: 30352891
+    }
   },
 
   /**

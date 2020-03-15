@@ -35,6 +35,7 @@ App({
   },
   globalData: {
     userInfo: null,
-    selectedIndex: 0
+    selectedIndex: 0,
+    statusBarHeight: wx.getSystemInfoSync()['statusBarHeight']//状态栏的高度
   }
 })

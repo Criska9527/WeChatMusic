@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/find/find",
-    "pages/friend/friend",
+    "pages/music/music",
     "pages/mine/mine"
   ],
   "window": {
@@ -9,15 +9,14 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat音乐",
     "navigationBarTextStyle": "black",
-    "navigationStyle": "default"
+    "navigationStyle": "custom"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json",
- 
   "tabBar": {
     "custom": true,
     "color": "#8D8D8D",
-    "selectedColor": "#DC4238",
+    "selectedColor": "#8D8D8D",
     "backgroundColor": "#f6f6f8",
     "borderStyle": "black",
     "list": [
@@ -28,12 +27,6 @@
         "selectedIconPath": "images/selected-music.png"
       },
       {
-        "pagePath": "pages/friend/friend",
-        "text": "收藏",
-        "iconPath": "images/love.png",
-        "selectedIconPath": "images/selected-love.png"
-      },
-      {
         "pagePath": "pages/mine/mine",
         "text": "我的",
         "iconPath": "images/me.png",
@@ -41,8 +34,5 @@
       }
     ]
   },
-  "usingComponents": {
-    
-  }
-
+  "usingComponents": {}
 }

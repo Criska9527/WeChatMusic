@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "l-search-bar":"/miniprogram_npm/lin-ui/search-bar"
+    "z-search": "/components/search/search"
   }
 }

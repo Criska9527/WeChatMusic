@@ -1,14 +1,19 @@
 <!--pages/find/find.wxml-->
 <view class="contanier">
-<!-- 搜索组件 -->
+  <z-navbar navigationBarTitle="{{navigationBarTitle}}"></z-navbar>
+  <!-- 搜索组件 -->
   <z-search/>
   <!-- 轮播图组件 -->
   <z-swiper/>
   <!-- listbar -->
   <z-listbar/>
-  <view class="musiclist">
+  
+    <view class="musiclist">
       <text class="title">推荐歌单</text>
+      <!-- <scroll-view scroll-y="true" style="height:800rpx;"> -->
       <z-musiclist/>
-  </view> 
+       <!-- </scroll-view> -->
+    </view>
+ 
 
 </view>
