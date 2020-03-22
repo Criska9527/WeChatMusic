@@ -1,5 +1,10 @@
 {
   "usingComponents": {
-    "z-search": "/components/search/search"
-  }
+    "z-navbar": "/components/z-navbar/z-navbar",
+    "z-signin":"/components/z-signin/z-signin"
+  },
+  "navigationStyle": "custom",
+  "navigationBarBackgroundColor": "#1D8BE8",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "WeChat音乐"
 }

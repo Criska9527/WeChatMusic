@@ -1,12 +1,18 @@
 /* components/z-music/z-music.wxss */
-
-.contenet {
+@import '/fonts/stylesheet.wxss';
+.content {
   width: 100%;
   height: 100%;
-  background-size: 100% 100% ;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
   width: 100%;
   background-repeat: no-repeat;
-  background-size: cover;
   -webkit-filter: blur(15px);
   -moz-filter: blur(15px);
   -o-filter: blur(15px);
@@ -23,3 +29,67 @@ scroll-view ::-webkit-scrollbar {
   color: transparent;
   display: none;
 }
+
+.content .title {
+  color: white;
+  position: absolute;
+  font-size: 24rpx;
+  top: 40px;
+  left: calc(50% - 12px);
+}
+
+.content .openpan {
+  width: 96%;
+  height: 96%;
+  background-size: 100% 100%;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 6px;
+
+}
+
+.content .openpanpar {
+  width: 300px;
+  height: 300px;
+  background-size: 100% 100%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 92px;
+  left: calc(50% - 150px);
+  -webkit-animation-iteration-count: infinite;
+}
+/* 旋转class */
+.music-on {
+  animation: music-rotate 20s linear infinite;
+}
+
+/* 旋转动画 */
+@keyframes music-rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+ 
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+/* 暂停动画 */
+.pause{
+	animation-play-state:paused;
+}
+.content .buttonlist{
+      position: absolute;
+      bottom: 80px;
+      display: flex;
+      justify-content: space-around;
+      width:300px;
+       left: calc(50% - 150px);
+}
+.content .buttonlist text{
+     
+      color: white;
+      font-size:80rpx;
+}
+
+

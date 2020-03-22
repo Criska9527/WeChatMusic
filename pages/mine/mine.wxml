@@ -1,2 +1,5 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="container">
+  <z-navbar back home navigationBarTitle="{{navigationBarTitle}}"></z-navbar>
+  <z-signin/>
+</view>

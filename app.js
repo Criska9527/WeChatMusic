@@ -5,6 +5,7 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
+    wx.$musicctx = null
 
     // 登录
     wx.login({
@@ -12,6 +13,23 @@ App({
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
+    var music = wx.setInnerAudioOption({
+
+      obeyMuteSwitch: false,
+
+      success: function (res) {
+
+        console.log('开启静音模式下播放音乐的功能');
+
+      },
+
+      fail: function (res) {
+
+        console.log('静音设置失败');
+
+      }
+
+    });
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -36,6 +54,7 @@ App({
   globalData: {
     userInfo: null,
     selectedIndex: 0,
-    statusBarHeight: wx.getSystemInfoSync()['statusBarHeight']//状态栏的高度
+    statusBarHeight: wx.getSystemInfoSync()['statusBarHeight'],//状态栏的高度
+    musicctx: null
   }
 })

@@ -1,5 +1,20 @@
 <!--components/z-music/z-music.wxml-->
-<view class="contenet" style="background-image:url('{{musicinfo.imgurl}}')">
-   <text>{{musicinfo.artistsname}}</text>
+<view class="content">
+  <!-- 背景图 -->
+  <view class="bg" style="background-image:url('{{musicinfo.imgurl}}')"></view>
+  <!-- 歌手标题 -->
+  <view class="title">{{musicinfo.artistsname}}</view>
+  <!-- 播放圆盘 -->
+  <view class="openpanpar {{ musicClass }}">
+    <view class="openpan" style="background-image:url('{{musicinfo.imgurl}}')">
+      <view class="player"></view>
+    </view>
+  </view>
+  <!-- 下面功能按钮 -->
+  <view class="buttonlist">
+     <text class="iconfont {{likeclass}}" ></text>
+     <text class="iconfont {{palyerclass}}" bindtap="playermusic"></text>
+     <text class="iconfont {{commitclass}}"></text>
+  </view>
   
 </view>

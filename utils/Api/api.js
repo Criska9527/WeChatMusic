@@ -1,5 +1,5 @@
 //api请求的封装
-const API_BASE_URL = "http://zmap.club:3000"
+const API_BASE_URL = "http://175.24.110.210:3000"
 const request = (url, data, method) => {
   let dataurl = `${API_BASE_URL}${url}`
   return new Promise((resolve, reject) => {
