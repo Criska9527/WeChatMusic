@@ -1,6 +1,7 @@
 <!-- 登录页 -->
-<view class="content">
+<view class="content" style="background-image:url('/images/timg.jpg')">
  <view class="topimg">
+      <view class="topimgbg" style="background-image:url('/images/default.png')"></view>
  </view>
   <view class="contentinput">
     <l-input label="用户名" placeholder="请输入用户名" />
