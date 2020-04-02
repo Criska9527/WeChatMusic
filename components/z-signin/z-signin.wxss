@@ -12,7 +12,14 @@
   top: 318px;
   position: absolute;
 }
-
+.resgisterbtn{
+   top: 419px;
+   right: 10px;
+  position: absolute;
+}
+.resgister{
+  margin-right: 5px;
+}
 .content .topimg {
   width: 200px;
   height: 200px;
@@ -32,6 +39,12 @@
   background-size: 100% 100%;
   border-radius: 50%;
 }
-.form-item-left{
+.inputdiv text{
   color: white !important;
+}
+input{
+  color: white !important;
+}
+.input-placeholder{
+  color: red;
 }
