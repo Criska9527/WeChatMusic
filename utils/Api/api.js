@@ -29,6 +29,15 @@ const API = {
   //获取歌单数据，热门或者新
   getplaylist(data) {
     return request('/top/playlist', data)
-  }
+  },
+  //登录(手机号)
+  sigininPhone(data){
+    return request('/login/cellphone', data)
+  },
+  //判断用户是否注册
+  Phoneexistence(data) {
+    return request('/cellphone/existence/check', data)
+  },
+  
 }
 export default API

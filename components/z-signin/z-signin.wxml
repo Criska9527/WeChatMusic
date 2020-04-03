@@ -1,14 +1,32 @@
 <!-- 登录页 -->
-<view class="content" style="background-image:url('/images/timg.jpg')">
- <view class="topimg">
-      <view class="topimgbg" style="background-image:url('/images/default.png')"></view>
- </view>
+<view class="content" style="background-image:url({{bgimgurl}})">
+  <view class="topimg">
+    <view class="topimgbg" style="background-image:url({{logoimgurl}})"></view>
+  </view>
   <view class="contentinput">
-    <l-input class="inputdiv" label="用户名" placeholder=""   placeholder-class="input-placeholder"/>
-    <l-input class="inputdiv" label="密码" placeholder=""  type="password" placeholder-class="input-placeholder"/>
+    <l-input 
+      class="inputdiv" 
+      label="用户名" 
+      placeholder="请输入手机号" 
+      bind:lininput="userInputChange" 
+      placeholder-class="input-placeholder" 
+      placeholder-style="color:#e2dcdc" 
+      focus="{{focus}}"
+    />
+    <l-input 
+       class="inputdiv" 
+       label="密码" 
+       placeholder="请输入密码" 
+       placeholder-style="color:#e2dcdc" 
+       bind:lininput="passInputChange" 
+       type="password" 
+       placeholder-class="input-placeholder" 
+    />
+    <l-input class="inputdiv" wx:if="{{showcode}}" label="验证码"/>
   </view>
   <view class="resgisterbtn">
-    <l-button shape="semicircle" class="resgister">半圆角</l-button>
-    <l-button shape="semicircle" class="sign">半圆角</l-button>
+    <l-button shape="semicircle" type="warning" class="resgister">注册</l-button>
+    <l-button shape="semicircle" class="sign" bindtap="siginclick">登录</l-button>
   </view>
+  <l-toast/>
 </view>

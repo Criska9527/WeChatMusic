@@ -12,14 +12,18 @@
   top: 318px;
   position: absolute;
 }
-.resgisterbtn{
-   top: 419px;
-   right: 10px;
+
+.resgisterbtn {
+  top: 410px;
+  right: 5px;
   position: absolute;
 }
-.resgister{
+
+.resgister view {
   margin-right: 5px;
+  /* color: white!important; */
 }
+
 .content .topimg {
   width: 200px;
   height: 200px;
@@ -39,12 +43,15 @@
   background-size: 100% 100%;
   border-radius: 50%;
 }
-.inputdiv text{
+
+.inputdiv text {
   color: white !important;
 }
-input{
+
+input {
   color: white !important;
 }
-.input-placeholder{
+
+.input-placeholder {
   color: red;
 }
