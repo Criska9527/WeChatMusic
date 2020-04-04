@@ -12,11 +12,16 @@
   top: 318px;
   position: absolute;
 }
-
-.resgisterbtn {
+.getphonecode{
   top: 410px;
   right: 5px;
   position: absolute;
+}
+.resgisterbtn {
+  margin-top: 10px;
+  float: right;
+  margin: 5px;
+
 }
 
 .resgister view {
@@ -54,4 +59,9 @@ input {
 
 .input-placeholder {
   color: red;
+}
+/* 倒计时 */
+.seconds{
+  background:none;
+  color: black;
 }

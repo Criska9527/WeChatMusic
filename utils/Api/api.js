@@ -38,6 +38,18 @@ const API = {
   Phoneexistence(data) {
     return request('/cellphone/existence/check', data)
   },
+  //注册
+  register(data) {
+    return request('/register/cellphone', data)
+  },
+  //获取验证码
+  sendcaptcha(data){
+    return request('/captcha/sent', data)
+  },
+  //验证验证码
+  verifycaptcha(data){
+    return request('/captcha/verify', data)
+  }
   
 }
 export default API

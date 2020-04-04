@@ -22,11 +22,81 @@
        type="password" 
        placeholder-class="input-placeholder" 
     />
-    <l-input class="inputdiv" wx:if="{{showcode}}" label="验证码"/>
+    <l-input 
+       class="inputdiv" 
+       label="昵称" 
+       placeholder="请输入昵称" 
+       placeholder-style="color:#e2dcdc" 
+       bind:lininput="NicknameChange" 
+       placeholder-class="input-placeholder" 
+    />
+    <l-input 
+        class="inputdiv" 
+        disabled="{{codewrite}}"   
+        placeholder="{{codeplacetext}}" 
+        bind:lininput="phonecodeChange"   
+        placeholder-style="color:#e2dcdc" 
+        label="验证码"
+    />
+      <view class="resgisterbtn">
+    <l-button shape="semicircle"  class="resgister" bindtap="registerclick">注册</l-button>
+         <l-button 
+        shape="semicircle" 
+        loading="{{codeloading}}" 
+        type="warning" 
+        bindtap="sendcaptchaclick"
+        class="getcode"
+        disabled="{{codeclick}}"
+        >
+       
+          <l-countdown 
+            l-time-class="seconds" 
+            wx:if="{{timeshow}}"  
+            time-type="second" 
+            time="60" 
+            status="{{timestatus}}" 
+            format="{%s}秒"
+            bind:linend ="timeend"
+          />
+          {{secoundtext}}
+     </l-button>
+    <!-- <l-button shape="semicircle" class="sign" bindtap="siginclick">登录</l-button> -->
   </view>
-  <view class="resgisterbtn">
-    <l-button shape="semicircle" type="warning" class="resgister">注册</l-button>
+  </view>
+  <!-- <view class="getphonecode">
+     <l-button 
+        shape="semicircle" 
+        loading="{{codeloading}}" 
+        type="warning" 
+        class="getcode">
+          {{secoundtext}}
+          <l-countdown 
+            l-time-class="seconds" 
+            wx:if="{{false}}"  
+            time-type="second" 
+            time="60" status="{{timestatus}}" 
+            format="{%s}秒"
+          />
+     </l-button>
+  </view> -->
+  <!-- <view class="resgisterbtn">
+    <l-button shape="semicircle"  class="resgister" bindtap="registerclick">注册</l-button>
+         <l-button 
+        shape="semicircle" 
+        loading="{{codeloading}}" 
+        type="warning" 
+        class="getcode">
+          {{secoundtext}}
+          <l-countdown 
+            l-time-class="seconds" 
+            wx:if="{{false}}"  
+            time-type="second" 
+            time="60" status="{{timestatus}}" 
+            format="{%s}秒"
+          />
+     </l-button>
     <l-button shape="semicircle" class="sign" bindtap="siginclick">登录</l-button>
-  </view>
+  </view> -->
   <l-toast/>
+  <l-message />
 </view>
