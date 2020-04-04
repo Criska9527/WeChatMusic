@@ -1,0 +1,15 @@
+
+<!-- 登录页 -->
+<view class="content" style="background-image:url({{bgimgurl}})">
+  <view class="topimg">
+    <view class="topimgbg" style="background-image:url({{logoimgurl}})"></view>
+  </view>
+  <view class="contentinput">
+      <view class="resgisterbtn">
+        <l-button shape="semicircle" class="sign" bindtap="siginclick">登录</l-button>
+        <l-button shape="semicircle"  class="resgister" type="warning" bindtap="registerclick">注册</l-button>
+      </view>
+  </view>
+  <l-toast/>
+  <l-message />
+</view>

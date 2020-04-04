@@ -5,9 +5,30 @@ Page({
    * 页面的初始数据
    */
   data: {
-    "navigationBarTitle": "我的"
+    "navigationBarTitle": "我的",
+    "signshow":false,
+    "entershow":false,
+    "mychoseshow":true,
+    "bgimgurl": 'http://zmap.club/xcximg/timg.jpg',
+    "logoimgurl": 'http://zmap.club/xcximg/default.png',
   },
+  //显示登录页
+  showenter:function(){
+      this.setData({
+        mychoseshow:false,
+        entershow:true,
+        signshow:false
 
+      })
+  },
+  showregister: function () {
+    this.setData({
+      mychoseshow: false,
+      entershow: false,
+      signshow: true
+
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

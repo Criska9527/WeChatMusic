@@ -1,7 +1,11 @@
 {
   "usingComponents": {
     "z-navbar": "/components/z-navbar/z-navbar",
-    "z-signin":"/components/z-signin/z-signin"
+    "z-signin":"/components/z-signin/z-signin",
+    "z-enter": "/components/z-enter/z-enter",
+    "l-button": "/miniprogram_npm/lin-ui/button/index",
+    "l-toast": "/miniprogram_npm/lin-ui/toast/index",
+    "l-message": "/miniprogram_npm/lin-ui/message/index"
   },
   "navigationStyle": "custom",
   "navigationBarBackgroundColor": "#1D8BE8",

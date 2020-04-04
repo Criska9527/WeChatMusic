@@ -1,0 +1,65 @@
+<!-- 登录页 -->
+<view class="content" style="background-image:url({{bgimgurl}})">
+  <view class="topimg">
+    <view class="topimgbg" style="background-image:url({{logoimgurl}})"></view>
+  </view>
+  <view class="contentinput">
+    <l-input 
+      class="inputdiv" 
+      label="用户名" 
+      placeholder="请输入手机号" 
+      bind:lininput="userInputChange" 
+      placeholder-class="input-placeholder" 
+      placeholder-style="color:#e2dcdc" 
+      focus="{{focus}}"
+    />
+    <l-input 
+       class="inputdiv" 
+       label="密码" 
+       placeholder="请输入密码" 
+       placeholder-style="color:#e2dcdc" 
+       bind:lininput="passInputChange" 
+       type="password" 
+       placeholder-class="input-placeholder" 
+    />
+      <view class="resgisterbtn">
+       <l-button shape="semicircle" class="sign" bindtap="siginclick">登录</l-button>
+  </view>
+  </view>
+  <!-- <view class="getphonecode">
+     <l-button 
+        shape="semicircle" 
+        loading="{{codeloading}}" 
+        type="warning" 
+        class="getcode">
+          {{secoundtext}}
+          <l-countdown 
+            l-time-class="seconds" 
+            wx:if="{{false}}"  
+            time-type="second" 
+            time="60" status="{{timestatus}}" 
+            format="{%s}秒"
+          />
+     </l-button>
+  </view> -->
+  <!-- <view class="resgisterbtn">
+    <l-button shape="semicircle"  class="resgister" bindtap="registerclick">注册</l-button>
+         <l-button 
+        shape="semicircle" 
+        loading="{{codeloading}}" 
+        type="warning" 
+        class="getcode">
+          {{secoundtext}}
+          <l-countdown 
+            l-time-class="seconds" 
+            wx:if="{{false}}"  
+            time-type="second" 
+            time="60" status="{{timestatus}}" 
+            format="{%s}秒"
+          />
+     </l-button>
+    <l-button shape="semicircle" class="sign" bindtap="siginclick">登录</l-button>
+  </view> -->
+  <l-toast/>
+  <l-message />
+</view>
