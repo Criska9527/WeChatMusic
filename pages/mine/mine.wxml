@@ -1,6 +1,6 @@
 <!--pages/mine/mine.wxml-->
 <view class="container">
-  <z-navbar  home navigationBarTitle="{{navigationBarTitle}}"></z-navbar>
+  <z-navbar home navigationBarTitle="{{navigationBarTitle}}"></z-navbar>
   <view class="content" style="background-image:url({{bgimgurl}})" wx:if="{{mychoseshow}}">
     <view class="topimg">
       <view class="topimgbg" style="background-image:url({{logoimgurl}})"></view>

@@ -1,0 +1,6 @@
+<!--components/z-mine/z-mine.wxml-->
+<view class="container">
+  <view class="info">
+    
+  </view>
+</view>
