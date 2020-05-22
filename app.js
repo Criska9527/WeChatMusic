@@ -6,6 +6,7 @@ App({
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
     wx.$musicctx = null
+    
 
     // 登录
     wx.login({

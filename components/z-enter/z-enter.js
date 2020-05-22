@@ -46,6 +46,7 @@ Component({
           title: '登录成功~',
           icon: 'success'
         })
+        this.triggerEvent('signin', true);
       })
 
     },

@@ -1,6 +1,31 @@
 <!--components/z-mine/z-mine.wxml-->
 <view class="container">
-  <view class="info">
-    
+ 
+  <view class="content">
+    <view class="bg"  style="background:url('{{bgurl}}') rgba(97, 94, 94, 0.5)"></view>
+    <!-- 头像等个人信息 -->
+    <view class="info">
+     
+      <view class="baseinfo">
+        <l-avatar src="http://img3.a0bi.com/upload/ttq/20161015/1476518118768.png" />
+        <view class="infolist">
+          <text class="name">此处名字</text>
+          <view class="friend">
+            <text>关注：10</text>
+            <text class="line">|</text>
+            <text>粉丝:1</text>
+          </view>
+        </view>
+
+      </view>
+      <!-- <view class="lab">
+        <l-tag shape="circle">更换背景</l-tag>
+      </view> -->
+
+    </view>
+    <!-- 歌单等详细信息 -->
+    <view class="musiclist">
+      歌单
+    </view>
   </view>
 </view>

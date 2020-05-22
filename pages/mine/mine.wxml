@@ -13,7 +13,9 @@
     </view>
   </view>
   <!-- 登录 -->
-  <z-enter wx:if="{{entershow}}" />
+  <z-enter wx:if="{{entershow}}"   bind:signin="get"/>
   <!-- 注册 -->
   <z-signin wx:if="{{signshow}}" />
+  <!-- 我的 -->
+  <z-mine wx:if="{{mypage}}" />
 </view>

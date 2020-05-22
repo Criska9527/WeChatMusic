@@ -8,7 +8,8 @@ Page({
     "navigationBarTitle": "我的",
     "signshow":false,
     "entershow":false,
-    "mychoseshow":true,
+    "mychoseshow":false,
+    "mypage":true,
     "bgimgurl": 'http://zmap.club/xcximg/timg.jpg',
     "logoimgurl": 'http://zmap.club/xcximg/default.png',
   },
@@ -29,6 +30,18 @@ Page({
 
     })
   },
+  //测试传值问题
+  get(e){
+    this.setData({
+      mypage:e.detail,
+      mychoseshow: false,
+      entershow: false,
+      signshow: false
+
+
+    })
+  },
+   
   /**
    * 生命周期函数--监听页面加载
    */

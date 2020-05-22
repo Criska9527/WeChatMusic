@@ -3,6 +3,7 @@
     "z-navbar": "/components/z-navbar/z-navbar",
     "z-signin":"/components/z-signin/z-signin",
     "z-enter": "/components/z-enter/z-enter",
+    "z-mine": "/components/z-mine/z-mine",
     "l-button": "/miniprogram_npm/lin-ui/button/index",
     "l-toast": "/miniprogram_npm/lin-ui/toast/index",
     "l-message": "/miniprogram_npm/lin-ui/message/index"
