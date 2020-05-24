@@ -1,0 +1,111 @@
+/* components/z-listinfo/z-listinfo.wxss */
+@import '/fonts/stylesheet.wxss';
+.content,.container{
+  height: 100%;
+}
+.content .baseinfo {
+  display: flex;
+  padding: 45rpx;
+  height: 200rpx;
+  justify-content: space-between;
+}
+.content .baseinfo  image{
+ width: 200rpx;
+height: 200rpx;
+border-radius: 5%;
+background-size: 100% 100%;
+
+}
+.content .baseinfo  .info .name{
+    font-size: 26rpx;
+    font-weight: bold;
+}
+.content .baseinfo  .info .desc{
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 3;
+overflow: hidden;
+ font-size:20rpx;
+}
+.baseinfo .info{
+  display: flex;
+flex-direction: co;
+flex-direction: column;
+justify-content: space-between;
+color: white;
+width: 410rpx;
+
+
+}
+.bg {
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  -webkit-filter: blur(15px);
+  -moz-filter: blur(15px);
+  -o-filter: blur(15px);
+  -ms-filter: blur(15px);
+  filter: blur(15px);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+
+}
+
+.content .list .right text {
+   color: black;
+   line-height: 24px;
+
+}
+.list{
+  height: 100%;
+  background: white;
+  border-radius: 40rpx 40rpx;
+
+}
+.list .list-item{
+  display: flex;
+  font-size: 24rpx;
+  justify-content: space-between;
+  padding: 20rpx 0rpx;
+}
+
+.flingeritem{
+    background: #eee;
+}
+.list .list-func{
+  height: 50rpx;
+
+}
+.list-body{
+  padding: 0px 10px;
+
+}
+.list-body .count{
+  color: #807d7d;
+  line-height: 24px;
+  width: 50rpx;
+
+
+}
+.list-body .left{
+  display: flex;
+}
+.list-body .left .list-content{
+  display: flex;
+  flex-direction: column;
+}
+.list-body .left .list-content .singger{
+  text-align: left;
+  font-size: 16rpx;
+
+}
+
+
+
+
+
+

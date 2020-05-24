@@ -1,0 +1,4 @@
+<view class="container">
+   <z-navbar back home navigationBarTitle="歌单"></z-navbar>
+     <z-listinfo class="musiclist" style="margin-top:{{tarbar}}px;" listid="{{listid}}"/>
+</view>

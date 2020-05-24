@@ -56,6 +56,9 @@ App({
     userInfo: null,
     selectedIndex: 0,
     statusBarHeight: wx.getSystemInfoSync()['statusBarHeight'],//状态栏的高度
-    musicctx: null
+    musicctx: null,
+    listid:null, //歌曲列表的id
+    musicid:null,//歌曲id
+    musicinfo:null//在播放的歌曲信息
   }
 })

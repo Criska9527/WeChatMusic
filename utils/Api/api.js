@@ -49,6 +49,18 @@ const API = {
   //验证验证码
   verifycaptcha(data){
     return request('/captcha/verify', data)
+  },
+  //获取歌单详情
+  getmusiclistinfo(data){
+    return request('/playlist/detail', data)
+  },
+  //获取歌曲详细
+  getsong(data) {
+    return request('/song/detail', data)
+  },
+  //获取歌曲的播放地址
+  getmusicurl(data){
+    return request('/song/url', data)
   }
   
 }

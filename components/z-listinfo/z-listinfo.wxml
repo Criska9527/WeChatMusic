@@ -1,0 +1,32 @@
+<view class="container">
+  <view class="content">
+    <!-- 背景图 -->
+
+    <view class="baseinfo">
+      <view class="bg" style="background-image:url('{{musiclist.coverImgUrl}}')"></view>
+      <image src="{{musiclist.coverImgUrl}}"></image>
+      <view class="info">
+        <text class="name">{{musiclist.name}}</text>
+        <text class="desc">{{musiclist.description}}</text>
+      </view>
+    </view>
+    <view class="list">
+      <view class=".list-func"></view>
+      <view class="list-body">
+        <view class="list-item"  wx:for="{{songlist}}" wx:key="*this" data-id="{{item.id}}" hover-class="flingeritem" bindtap="playmusic">
+          <view class="left">
+            <text class="count">{{index+1}}</text>
+            <view class="list-content">
+              <text class="songname">{{item.name}}</text>
+              <text class="singger">{{item.singer}}</text>
+            </view>
+
+          </view>
+          <view class="right">
+            <text class="iconfont icon-zanting"></text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

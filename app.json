@@ -2,7 +2,8 @@
   "pages": [
     "pages/find/find",
     "pages/music/music",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/list/list"
   ],
   "window": {
     "backgroundTextStyle": "light",

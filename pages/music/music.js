@@ -1,25 +1,59 @@
 // pages/friend/friend.js
+// components/z-musiclist/z-musiclist.js
+import API from '../../utils/Api/api.js'
+//获取应用实例
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    navigationBarTitle: "牵丝戏",
-    musicid: 30352891,
+    navigationBarTitle: "",
+    musicid: app.globalData.musicid,
     musicinfo: {
-      url: "http://m7.music.126.net/20200322151216/1bc99729100efc2890dc9081860a5bc5/ymusic/a8f8/4db5/48a4/f8a85686e7fc0d894b6d9f210500ff37.mp3",
-      imgurl:"https://p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
-      artistsname:"银临",
-      musicid: 30352891
+
     }
   },
+  //获取歌曲详情
+  getsongs() {
+    var song = {
+      url:"",
+      imgurl: "",
+      artistsname: "",
+      musicid:""
+    }
+    API.getsong({
+      ids: app.globalData.musicid
+    }).then((res) => {
+      console.log(res)
+      this.setData({
+        navigationBarTitle: res.songs[0].name
+      })
+      //歌曲图片
+      song.imgurl = res.songs[0].al.picUrl
+      //歌手名称
+      song.artistsname = res.songs[0].ar[0].name
+      
+      //获取歌曲的播放地址
+      API.getmusicurl({
+        id: app.globalData.musicid
+      }).then((res)=>{
+        console.log(res)
+        song.url = res.data[0].url
+        this.setData({
+          musicinfo:song
+        })
+      })
+      app.globalData.musicinfo = song
 
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getsongs()
   },
 
   /**
@@ -69,5 +103,6 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+
 })

@@ -1,15 +1,15 @@
 <!--components/z-mine/z-mine.wxml-->
 <view class="container">
- 
+
   <view class="content">
-    <view class="bg"  style="background:url('{{bgurl}}') rgba(97, 94, 94, 0.5)"></view>
+    <view class="bg" style="background:url('{{bgurl}}') rgba(97, 94, 94, 0.5)"></view>
     <!-- 头像等个人信息 -->
     <view class="info">
-     
+
       <view class="baseinfo">
         <l-avatar src="http://img3.a0bi.com/upload/ttq/20161015/1476518118768.png" />
         <view class="infolist">
-          <text class="name">此处名字</text>
+          <text class="name">{{minedata.profile.nickname}}</text>
           <view class="friend">
             <text>关注：10</text>
             <text class="line">|</text>
@@ -24,8 +24,17 @@
 
     </view>
     <!-- 歌单等详细信息 -->
-    <view class="musiclist">
-      歌单
+    <view class="musiclistdiv">
+      <view class="listdiv">
+        <text>收藏的歌单</text>
+        <view class="list">
+          <view class="list-item" wx:for="{{playlist}}" wx:key="*this">
+            <image class="list-item-img" src=""></image>
+            <text></text>
+          </view>
+        </view>
+      </view>
+
     </view>
   </view>
 </view>

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "z-navbar": "/components/z-navbar/z-navbar",
+    "z-listinfo": "/components/z-listinfo/z-listinfo"
+  },
+  "navigationStyle": "custom",
+  "navigationBarBackgroundColor": "#1D8BE8",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "WeChat音乐"
+}

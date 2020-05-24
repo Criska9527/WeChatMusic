@@ -1,0 +1,8 @@
+/* pages/list/list.wxss */
+z-listinfo{
+  width: 100%;
+  height: 100%;
+}
+page{
+  height: 100%;
+}

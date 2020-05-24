@@ -1,13 +1,16 @@
 // components/z-music/z-music.js
+import API from '../../utils/Api/api.js'
+//获取应用实例
+const app = getApp()
 Component({
   /**
    * 组件的属性列表
    */
   properties: {
-    musicid: {
-      type: Number,
-      value: null
-    },
+    // musicid: {
+    //   type: Number,
+    //   value: null
+    // },
     musicinfo:{
       type:Object,
       value:null
@@ -20,10 +23,20 @@ Component({
     },
     attached(){
       console.log(this.properties.musicinfo)
+
+      
   
-      this.initMusic()
-  
-    }
+    },
+    ready() {
+      console.log("在组件在视图层布局完成后执行")
+      setTimeout(()=>{
+        this.initMusic()
+      },500)
+   
+    },
+    moved() {
+      
+    },
   },
 
   /**
@@ -34,6 +47,7 @@ Component({
       type: Boolean,
       value: true
     },
+    musicinfo:app.globalData.musicinfo,
     musicClass: 'music-on',
     palyerclass:'icon-suspend_icon',
     likeclass: 'icon-xihuan',
@@ -73,10 +87,10 @@ Component({
     initMusic(){
       //判断是否是上个音频
 
- 
+      debugger
       if (wx.$musicctx != null){
              //当页面初始化时判断url是否重复清除一次音频ctx
-        if (wx.$musicctx.src === this.properties.musicinfo.url) {
+        if (wx.$musicctx.src === app.globalData.musicinfo.url) {
           //判断当前音频是否播放完毕
           wx.$musicctx.onEnded((res) => {
             console.log('进来了')
@@ -99,10 +113,10 @@ Component({
       wx.$musicctx = MusicCtx
       console.log(wx.$musicctx)
       //设置播放地址
-      wx.$musicctx.src = this.properties.musicinfo.url
+      wx.$musicctx.src = app.globalData.musicinfo.url
       //设置上一播放url
       this.setData({
-        lastsongurl: this.properties.musicinfo.url
+        lastsongurl: app.globalData.musicinfo.url
       })
       wx.$musicctx.onError(function (res) {
         console.log(res)

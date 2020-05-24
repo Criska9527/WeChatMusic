@@ -1,11 +1,11 @@
 <!--components/z-musiclist/z-musiclist.wxml-->
 <view class="container">
-  <view class="list-item" wx:for="{{playlist}}" wx:key="*this" bindtap="jumptest">
+  <view class="list-item" wx:for="{{playlist}}" wx:key="*this" data-id="{{item.id}}" bindtap="jumptest">
     <image class="list-item-img" src="{{item.coverImgUrl}}"></image>
     <text>{{item.name}}</text>
   </view>
   <!-- 此两行用来撑开宽度 -->
   <view class="list-item"/>
   <!-- <view class="list-item"/> -->
-
+  z-
 </view>
