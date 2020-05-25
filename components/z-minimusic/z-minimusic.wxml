@@ -1,0 +1,10 @@
+<view class="minimusci" bindtap="music">
+  <view class="minicontent">
+    <view class="left">
+        
+    </view>
+    <view class="right">
+        <text class="name">歌曲名称</text>
+    </view>
+  </view>
+</view>

@@ -17,3 +17,10 @@ z-musiclist{
   height: 0;
   color: transparent;
 }
+z-minimusic{
+  position: fixed;
+  right: 0rpx;
+  background: red;
+  z-index: 99;
+  top:45%;
+}

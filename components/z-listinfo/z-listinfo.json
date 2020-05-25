@@ -1,4 +1,7 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+        "l-loading": "/miniprogram_npm/lin-ui/loading/index",
+        "z-minimusic": "/components/z-minimusic/z-minimusic"
+  }
 }

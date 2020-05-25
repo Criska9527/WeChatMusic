@@ -99,3 +99,8 @@ scroll-view ::-webkit-scrollbar {
   color: white;
   font-size: 80rpx;
 }
+l-loading{
+  position: absolute;
+  left: calc(50% - 18px);
+  top: 50%;
+}

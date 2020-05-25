@@ -104,6 +104,18 @@ width: 410rpx;
 
 }
 
+l-loading{
+  position: absolute;
+  left: calc(50% - 18px);
+  top: 50%;
+}
+z-minimusic{
+  position: fixed;
+  right: 0rpx;
+  background: red;
+  z-index: 99;
+  top:45%;
+}
 
 
 

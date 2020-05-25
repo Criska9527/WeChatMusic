@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "l-card":"/miniprogram_npm/lin-ui/card/index"
+    "l-card":"/miniprogram_npm/lin-ui/card/index",
+    "l-loading":"/miniprogram_npm/lin-ui/loading/index"
   }
 }

@@ -29,11 +29,7 @@ Component({
       //测试假数据
 
     },
-    observers: { //观察者：属性监听
-      'listid' (data) { //单个监听
-        console.log('数量改变了')
-      },
-    },
+
 
     detached: function() {
       // 在组件实例被从页面节点树移除时执行
@@ -44,7 +40,8 @@ Component({
    */
   data: {
     musiclist: null,
-    songlist: null
+    songlist: null,
+    showloading:true
   },
 
   /**
@@ -74,7 +71,10 @@ Component({
             ids: songids
           }).then((res) => {
             console.log(res)
-
+            //取消loading
+            this.setData({
+              showloading:false
+            })
 
             let single = {
 
@@ -98,6 +98,7 @@ Component({
     },
     //跳转播放页面
     playmusic(event) {
+      debugger
       //设置当前播放的歌曲id
       app.globalData.musicid = event.currentTarget.dataset.id
       wx.navigateTo({
@@ -120,5 +121,10 @@ Component({
         }
       })
     }
-  }
+  },
+  observers: { //观察者：属性监听
+    'listid'(data) { //单个监听
+      console.log('数量改变了')
+    },
+  },
 })

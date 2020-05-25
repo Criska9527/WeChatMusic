@@ -13,9 +13,12 @@ Component({
     // },
     musicinfo:{
       type:Object,
-      value:null
+      value:null,
+      showloading:true
+
     }
   },
+
   lifetimes:{
     created(){
       //判断播放状态
@@ -23,7 +26,7 @@ Component({
     },
     attached(){
       console.log(this.properties.musicinfo)
-
+      
       
   
     },
@@ -31,7 +34,7 @@ Component({
       console.log("在组件在视图层布局完成后执行")
       setTimeout(()=>{
         this.initMusic()
-      },500)
+      },800)
    
     },
     moved() {
@@ -47,7 +50,7 @@ Component({
       type: Boolean,
       value: true
     },
-    musicinfo:app.globalData.musicinfo,
+    musicinfo:null,
     musicClass: 'music-on',
     palyerclass:'icon-suspend_icon',
     likeclass: 'icon-xihuan',
@@ -86,8 +89,9 @@ Component({
     },
     initMusic(){
       //判断是否是上个音频
-
+    //1
       debugger
+    
       if (wx.$musicctx != null){
              //当页面初始化时判断url是否重复清除一次音频ctx
         if (wx.$musicctx.src === app.globalData.musicinfo.url) {
@@ -145,5 +149,14 @@ Component({
       // })
      
     }
-  }
+  },
+  observers: { //观察者：属性监听
+    'musicinfo'(data) {
+      console.log(data) //单个监听
+      if(data!=null){
+       
+      }
+
+    },
+  },
 })

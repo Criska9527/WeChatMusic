@@ -7,13 +7,13 @@
   <z-swiper/>
   <!-- listbar -->
   <z-listbar/>
-  
-    <view class="musiclist">
-      <text class="title">推荐歌单</text>
-      <!-- <scroll-view scroll-y="true" style="height:800rpx;"> -->
-      <z-musiclist/>
-       <!-- </scroll-view> -->
-    </view>
- 
+
+  <view class="musiclist">
+    <text class="title">推荐歌单</text>
+    <!-- <scroll-view scroll-y="true" style="height:800rpx;"> -->
+    <z-musiclist/>
+    <!-- </scroll-view> -->
+  </view>
+  <z-minimusic/>
 
 </view>

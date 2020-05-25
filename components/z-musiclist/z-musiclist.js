@@ -13,7 +13,8 @@ Component({
    * 组件的初始数据
    */
   data: {
-    playlist: null
+    playlist: null,
+    showloading:true
   },
   /**
    * 组件的生命周期
@@ -39,8 +40,12 @@ Component({
         order: "hot",
         limit: 20
       }).then((res) => {
+        this.setData({
+          showloading:false
+        })
         console.log(res)
         if (res.code === 200) {
+
           this.setData({
             playlist: res.playlists
           })

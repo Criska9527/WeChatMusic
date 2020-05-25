@@ -32,3 +32,8 @@
   -webkit-box-orient: vertical;
   font-size: 25rpx;
 }
+l-loading{
+  position: absolute;
+  left: calc(50% - 18px);
+
+}

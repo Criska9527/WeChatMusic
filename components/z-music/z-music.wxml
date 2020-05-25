@@ -1,5 +1,6 @@
 <!--components/z-music/z-music.wxml-->
 <view class="content">
+  <l-loading show="{{showloading}}" type="rotate"></l-loading>
   <!-- 背景图 -->
   <view class="bg" style="background-image:url('{{musicinfo.imgurl}}')"></view>
   <!-- 歌手标题 -->
