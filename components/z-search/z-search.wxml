@@ -1,0 +1,30 @@
+<!--components/z-search/z-search.wxml-->
+<view class="container-search">
+  <l-search-bar placeholder="搜索" show-cancel="{{false}}" />
+  <view class="history">
+    <view class="title">
+      <text class="text">历史记录</text>
+      <text class="delete iconfont icon-qingchu"></text>
+    </view>
+    <view class="content">
+      <view class="value">
+        后会无期
+      </view>
+      <view class="value">
+        后会无期
+      </view>
+      <view class="value">
+        后会无期
+      </view>
+
+    </view>
+  </view>
+  <view class="searchlist">
+    <view class="title">
+      热搜榜
+    </view>
+    <view class="searchlists">
+      此处列表
+    </view>
+  </view>
+</view>

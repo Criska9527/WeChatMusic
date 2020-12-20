@@ -1,7 +1,7 @@
 /* components/z-swiper/z-swiper.wxss */
 .container{
   color: black;
-  margin-top: 10rpx;
+  margin-top: 76rpx;
   height:250rpx;
   width: 100%;
   /* margin-left: 2.5%; */

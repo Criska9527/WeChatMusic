@@ -1,0 +1,14 @@
+/* pages/search/search.wxss */
+page{
+  height: 100%;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  
+}
+z-search{
+   width: 100%;
+  height: 100%;
+  
+}

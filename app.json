@@ -3,7 +3,9 @@
     "pages/find/find",
     "pages/music/music",
     "pages/mine/mine",
-    "pages/list/list"
+    "pages/list/list",
+    "pages/search",
+    "pages/search/search"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -24,6 +26,12 @@
       {
         "pagePath": "pages/find/find",
         "text": "乐库",
+        "iconPath": "images/music.png",
+        "selectedIconPath": "images/selected-music.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
         "iconPath": "images/music.png",
         "selectedIconPath": "images/selected-music.png"
       },

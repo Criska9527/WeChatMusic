@@ -1,0 +1,4 @@
+  <z-navbar navigationBarTitle="WeChat云音乐"></z-navbar>
+  <view class="container">
+    <z-search/>
+  </view>

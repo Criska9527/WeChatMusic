@@ -1,10 +1,8 @@
 <view class="minimusci" bindtap="music">
+<l-toast/>
   <view class="minicontent">
-    <view class="left">
-        
-    </view>
-    <view class="right">
-        <text class="name">歌曲名称</text>
+    <view class="content">
+        <text class="iconfont icon-yinle_weixuanze"></text>
     </view>
   </view>
 </view>

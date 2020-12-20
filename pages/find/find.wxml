@@ -2,7 +2,7 @@
 <view class="contanier">
   <z-navbar navigationBarTitle="{{navigationBarTitle}}"></z-navbar>
   <!-- 搜索组件 -->
-  <z-search/>
+  <!-- <z-search/> -->
   <!-- 轮播图组件 -->
   <z-swiper/>
   <!-- listbar -->

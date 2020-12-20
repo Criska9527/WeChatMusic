@@ -1,0 +1,44 @@
+/* components/z-search/z-search.wxss */
+@import '/fonts/stylesheet.wxss';
+
+.container-search {
+  margin-top: 40px;
+  padding: 20rpx;
+}
+
+.history {
+  margin-top: 35rpx;
+  font-size: 24rpx;
+}
+
+.history .title {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.history .content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-top: 10px;
+}
+
+.history .content .value {
+  background:#d2d4d4;
+  text-align: center;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+.history .title {
+  font-weight: bold;
+}
+.searchlist{
+  
+}
+.searchlist .title {
+    font-size: 24rpx;
+  font-weight: bold;
+    margin-top: 10px;
+}

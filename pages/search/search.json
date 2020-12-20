@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "z-minimusic": "/components/z-minimusic/z-minimusic",
+    "z-search": "/components/z-search/z-search",
+    "z-swiper": "/components/z-swiper/z-swiper",
+    "z-listbar": "/components/z-listbar/z-listbar",
+    "z-musiclist": "/components/z-musiclist/z-musiclist",
+    "z-navbar": "/components/z-navbar/z-navbar"
+  },
+  "navigationStyle": "custom",
+  "navigationBarBackgroundColor": "#1D8BE8",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "WeChat音乐"
+}

@@ -1,1 +1,7 @@
 /* components/z-minimusic/z-minimusic.wxss */
+@import '/fonts/stylesheet.wxss';
+.minicontent 
+text{
+  padding: 5px;
+
+}
